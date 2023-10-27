@@ -70,7 +70,7 @@ jobs:
     needs: build
     uses: ./.github/workflows/reuseable.yml
     with:
-      artifact-name: dist=files
+      artifact-name: dist-files
   report:
     needs: [lint, test, build]
     if: failure()
